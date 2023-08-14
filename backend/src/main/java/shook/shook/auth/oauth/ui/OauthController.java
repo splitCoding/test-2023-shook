@@ -10,7 +10,7 @@ import shook.shook.auth.oauth.application.dto.LoginResponse;
 
 @RequiredArgsConstructor
 @RestController
-public class OauthController {
+public class OauthController implements OauthApi {
 
     private final OAuthService oAuthService;
 
