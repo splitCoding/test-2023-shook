@@ -9,6 +9,9 @@ jobs:
     runs-on: shook-runner
     
     steps:
+    - name: Show current user name
+      shell: bash
+      run: whoami
     - name: Checkout Source Code
       uses: actions/checkout@v2
     - name: Grant execute permission to gradlew
