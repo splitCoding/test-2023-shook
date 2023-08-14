@@ -29,14 +29,16 @@ jobs:
     - name: Copy Jar
       shell: bash
       run: cp backend/build/libs/shook-0.0.1-SNAPSHOT.jar ~/application-jar
+    - name: Move to home
+      shell: bash
+      run: |
+        cd /Users/split
+        pwd
+    - name: Backend Deploy
+      shell: bash
+      run: bash backend-deploy.sh
     - name: Remove Repository 
       shell: bash
       run: |
         cd ../..
         rm -rf test-2023-shook
-    - name: Move to home
-      run: |
-        cd /Users/split
-        pwd
-    - name: Backend Deploy
-      run: bash backend-deploy.sh
