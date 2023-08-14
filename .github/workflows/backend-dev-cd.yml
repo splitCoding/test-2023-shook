@@ -33,4 +33,7 @@ jobs:
         rm -rf test-2023-shook
     - name: Backend Deploy
       shell: bash
-      run: bash /Users/split/backend-deploy.sh
+      run: |
+        cd /Users/split
+        pwd
+        bash /Users/split/backend-deploy.sh
