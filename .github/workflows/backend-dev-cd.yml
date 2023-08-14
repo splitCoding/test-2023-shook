@@ -17,6 +17,9 @@ jobs:
     - name: Grant execute permission to gradlew
       shell: bash
       run: chmod +x backend/gradlew
+    - name: Check Java Version
+      shell: bash
+      run: java --version
     - name: Gradlew bootJar
       shell: bash
       run: |
