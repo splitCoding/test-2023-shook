@@ -22,7 +22,7 @@ jobs:
         cd ..
     - name: Copy Jar
       shell: bash
-      run: cp /backend/build/libs/shook-0.0.1-SNAPSHOT.jar ~/application-jar
+      run: cp backend/build/libs/shook-0.0.1-SNAPSHOT.jar ~/application-jar
     - name: Remove Repository 
       shell: bash
       run: |
