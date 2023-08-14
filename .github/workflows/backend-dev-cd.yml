@@ -35,10 +35,8 @@ jobs:
         cd ../..
         rm -rf test-2023-shook
     - name: Move to home
-      shell: bash
       run: |
         cd /Users/split
         pwd
     - name: Backend Deploy
-      shell: bash
       run: bash backend-deploy.sh
