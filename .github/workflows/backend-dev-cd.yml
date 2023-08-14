@@ -36,7 +36,10 @@ jobs:
         pwd
     - name: Backend Deploy
       shell: bash
-      run: bash backend-deploy.sh
+      run: |
+        ls -al
+        ls -al | grep deploy
+        bash backend-deploy.sh
     - name: Remove Repository 
       shell: bash
       run: |
