@@ -31,8 +31,8 @@ jobs:
     - name: Backend Deploy
       shell: bash
       run: bash /Users/split/backend-deploy.sh
-    - name: Remove Repository 
-      shell: bash
-      run: |
-        cd ../..
-        rm -rf test-2023-shook
+    # - name: Remove Repository 
+    #   shell: bash
+    #   run: |
+    #     cd ../..
+    #     rm -rf test-2023-shook
