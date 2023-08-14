@@ -11,9 +11,6 @@ jobs:
     steps:
     - name: Checkout Source Code
       uses: actions/checkout@v2
-      with:
-        token: ${{ secrets.SUBMODULE_PAT }}
-        submodules: recursive
     - name: Grant execute permission to gradlew
       shell: bash
       run: chmod +x 2023-shook/backend/gradlew
