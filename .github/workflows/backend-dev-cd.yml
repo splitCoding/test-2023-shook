@@ -13,15 +13,13 @@ jobs:
       uses: actions/checkout@v2
     - name: Grant execute permission to gradlew
       shell: bash
-      run: |
-        pwd
-        chmod +x test-2023-shook/test-2023-shook/backend/gradlew
+      run: chmod +x /backend/gradlew
     - name: Gradlew bootJar
       shell: bash
-      run: test-2023-shook/test-2023-shook/backend/gradlew bootJar
+      run: /backend/gradlew bootJar
     - name: Copy Jar
       shell: bash
-      run: cp test-2023-shook/test-2023-shook/backend/build/libs/shook-0.0.1-SNAPSHOT.jar ~/application-jar
+      run: cp /backend/build/libs/shook-0.0.1-SNAPSHOT.jar ~/application-jar
     - name: Remove Repository 
       shell: bash
       run: rm -rf 2023-shook
